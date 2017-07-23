@@ -9,7 +9,7 @@ RSpec.describe Product, type: :model do
   it 'saves a product with name, description and price' do
     product = FactoryGirl.create(:product)
     product.name.should eq 'Chair'
-    product.price.should eq 5
+    product.price.should eq 7
     product.description.should eq 'Great padded chair for sitting and relaxing in.'
   end
 end

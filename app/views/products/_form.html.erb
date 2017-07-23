@@ -7,5 +7,7 @@
  <%= f.text_field :description %>
  <%= f.label :price %>
  <%= f.number_field :price, :step => 0.01 %>
+ <%= f.label :image, "add an image?" %>
+ <%= f.file_field :image %>
  <%= f.submit %>
  <% end %>

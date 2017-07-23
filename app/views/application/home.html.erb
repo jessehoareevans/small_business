@@ -1,12 +1,25 @@
+<h3>Welcome <%= current_user.username %></h3>
+
 <h1>Welcome to the Son of Cod!</h1>
 
 <h3>Here you will be able to find all of your seafood needs</h3>
 
+<p>
+  <ul>
+    <li>We have fresh food everyday</li> <br>
+    <li>We have fisherman on retainer that catch our food daily</li> <br>
+    <li>Best prices in town!</li> <br>
+    <li>Rated 5 stars by one person on Yelp!</li>
+  </ul>
+</p>
+
+<div class="fishing">
+  <%= image_tag "fishing.jpg" %>
+</div>
+
 <% if current_user %>
 
-<ul>
-  <li><%= current_user.username %></li>
-</ul>
+
 
 
 <% end %>
